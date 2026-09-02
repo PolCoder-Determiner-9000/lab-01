@@ -32,6 +32,11 @@ class MainActivity : ComponentActivity() {
         pettablePets.add(dog)
         // pettablePets.add(scorpion) // should raise an error
 
+        val happy = Happy("9/01/2026", "Obama")
+        println(happy.emotion())
+        val sad = Sad("09/01/2026", "Donald")
+        println(sad.emotion())
+
         setContent {
             PetShopTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
